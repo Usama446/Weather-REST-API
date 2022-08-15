@@ -15,7 +15,7 @@ app.get("/", function (req, res) {
     res.render("index", { weather: null, error: null });
 });
 
-app.post('/del', function (req, res) {
+app.post('/', function (req, res) {
 
     let city = req.body.city;
     // Use that city name to fetch data
